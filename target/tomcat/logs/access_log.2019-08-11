@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:19:17 -0700] "GET /todolist HTTP/1.1" 200 14 http-bio-8080-exec-1 5322
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:19:17 -0700] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 8
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:28:21 -0700] "GET /todolist HTTP/1.1" 200 14 http-bio-8080-exec-5 774
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:34:37 -0700] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 79
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:34:45 -0700] "GET /todolist HTTP/1.1" 200 186 http-bio-8080-exec-4 2088
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:46:17 -0700] "POST /todolist/hiep HTTP/1.1" 204 - http-bio-8080-exec-8 407
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:46:25 -0700] "GET /todolist/ HTTP/1.1" 200 215 http-bio-8080-exec-9 174
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:46:46 -0700] "DELETE /todolist/6 HTTP/1.1" 204 - http-bio-8080-exec-10 136
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:21:46:51 -0700] "GET /todolist/ HTTP/1.1" 200 186 http-bio-8080-exec-10 101
