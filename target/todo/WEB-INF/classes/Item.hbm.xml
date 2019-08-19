@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="com.hiep.todolist.entity.Item" table="Item">
+        <meta attribute="class-description">
+            Lớp này chưa thông tin chi tiết về item.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <property name="itemName" column="item_name" type="string" />
+     
+    </class>
+</hibernate-mapping>

@@ -14,15 +14,15 @@ import com.hiep.todolist.entity.Item;
 public class ItemDAO {
 	private static SessionFactory factory;
 
-//	public static void main(String[] args) {
-//
-//		List<Item> items = ItemDAO.listItem();
-//		for (Item item : items) {
-//			System.out.println(item.getId());
-//			System.out.println(item.getItemName());
-//		}
-//		ItemDAO.addItem("absdfnasdn");
-//	}
+	public static void main(String[] args) {
+
+		List<Item> items = ItemDAO.listItem();
+		for (Item item : items) {
+			System.out.println(item.getId());
+			System.out.println(item.getItemName());
+		}
+		ItemDAO.addItem("absdfnasdn");
+	}
 
 	// add Item
 	public static void addItem(String itemName) {
@@ -31,7 +31,6 @@ public class ItemDAO {
 			Configuration conf1 = conf.configure();
 			factory = conf1.buildSessionFactory();
 		} catch (Throwable e) {
-
 			e.printStackTrace();
 		}
 		Session session = factory.openSession();
@@ -46,7 +45,6 @@ public class ItemDAO {
 			if (tx != null)
                 tx.rollback();
             e.printStackTrace();
-
 		}finally {
 			session.close();
 		}
@@ -61,10 +59,11 @@ public class ItemDAO {
 			Configuration conf1 = conf.configure();
 			factory = conf1.buildSessionFactory();
 		} catch (Throwable e) {
-
 			e.printStackTrace();
 		}
+//		System.out.println("abcxyx"+factory);
 		Session session = factory.openSession();
+	
 		Transaction tx = null;
 		try {
 			tx = session.beginTransaction();
@@ -82,6 +81,8 @@ public class ItemDAO {
 		} finally {
 			session.close();
 		}
+		
+		System.out.println("hiep");
 		return itemList;
 	}
 	
